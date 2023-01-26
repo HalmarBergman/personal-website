@@ -3,7 +3,7 @@
     <div class="left-elements">
       <NuxtLink to="/" class="link"><h5 class="element" :class="{ textdark: store.lightOrDark == true }">Portfolio</h5></NuxtLink>
       <NuxtLink to="/profiel" class="link"><h5 class="element" :class="{ textdark: store.lightOrDark == true }">Profiel</h5></NuxtLink>
-      <NuxtLink to="/curriculum vitae" class="link"
+      <NuxtLink to="/curriculumvitae" class="link"
         ><h5 class="element" :class="{ textdark: store.lightOrDark == true }">Curriculum Vitae</h5></NuxtLink
       >
     </div>

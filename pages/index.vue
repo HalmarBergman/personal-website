@@ -15,33 +15,14 @@
         </div>
         <Navbar />
         <div class="content">
-          <div class="first-section">
-            <div class="image">
-              <img src="~/assets/images/test.jpg" />
-            </div>
-            <div class="text">
-              <h3 :class="{ textdark: store.lightOrDark == true }">Me, myself and I</h3>
-              <h6 :class="{ textdark: store.lightOrDark == true }">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              </h6>
-            </div>
+          <div class="firstPortfolio">
+            <img src="~/assets/images/test.jpg" />
           </div>
-          <div class="second-section">
-            <div class="text">
-              <h6 :class="{ textdark: store.lightOrDark == true }">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              </h6>
-            </div>
-            <div class="image">
-              <img src="~/assets/images/test.jpg" />
-            </div>
+          <div class="secondPortfolio">
+            <img src="~/assets/images/test.jpg" />
+          </div>
+          <div class="thirdPortfolio">
+            <img src="~/assets/images/test.jpg" />
           </div>
         </div>
       </div>
@@ -60,7 +41,9 @@ function mode() {
 
 <style scoped lang="scss">
 @import '@/assets/css/variables.scss';
+
 .content {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -69,54 +52,40 @@ function mode() {
   height: 100%;
   gap: 40px;
   overflow-y: scroll;
-  .first-section {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 25px;
-    width: 100%;
-    .image {
-      min-width: 150px;
-      min-height: 150px;
-      max-width: 250px;
-      max-height: 150px;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-    .text {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 0px 14px 0px 0px;
+  .firstPortfolio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
-  .second-section {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 25px;
-    width: 100%;
-    .image {
-      min-width: 150px;
-      min-height: 150px;
-      max-width: 400px;
-      max-height: 150px;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+  .secondPortfolio {
+    position: absolute;
+    top: 0;
+    left: 65%;
+    width: 35%;
+    height: 38%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-    .text {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 0px 14px 0px 0px;
+  }
+  .thirdPortfolio {
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    width: 45%;
+    height: 60%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 }

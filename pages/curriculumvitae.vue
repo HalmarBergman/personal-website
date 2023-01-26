@@ -1,5 +1,5 @@
 <template>
-  <div class="cv">
+  <div class="curriculumvitae">
     <div class="background" :class="{ backgrounddark: store.lightOrDark == true }">
       <div class="section" :class="{ sectiondark: store.lightOrDark == true }">
         <label class="toggle-wrapper" :class="{ dark: store.lightOrDark == true }" @click="mode()">
