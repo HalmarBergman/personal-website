@@ -1,11 +1,11 @@
 <template>
   <div class="cv">
-    <div class="background" :class="{ backgrounddark: store.lightOrDark === 'dark' }">
-      <div class="section" :class="{ sectiondark: store.lightOrDark === 'dark' }">
+    <div class="background" :class="{ backgrounddark: store.lightOrDark == true }">
+      <div class="section" :class="{ sectiondark: store.lightOrDark == true }">
         <div class="title">
-          <h1 class="my-name" :class="{ textdark: store.lightOrDark === 'dark' }">Halmar</h1>
-          <h1 class="my-name" :class="{ textdark: store.lightOrDark === 'dark' }">Henrik Bjarne</h1>
-          <h1 class="my-name" :class="{ textdark: store.lightOrDark === 'dark' }">Bergman</h1>
+          <h1 class="my-name" :class="{ textdark: store.lightOrDark == true }">Halmar</h1>
+          <h1 class="my-name" :class="{ textdark: store.lightOrDark == true }">Henrik Bjarne</h1>
+          <h1 class="my-name" :class="{ textdark: store.lightOrDark == true }">Bergman</h1>
         </div>
         <Navbar />
       </div>

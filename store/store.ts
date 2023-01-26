@@ -2,7 +2,7 @@ export const useNuxtStore = defineStore('nuxt-store', {
   state: () => {
     return {
       env: '' as '' | 'development' | 'test' | 'production',
-      lightOrDark: 'light' as 'light' | 'dark',
+      lightOrDark: false as boolean,
     }
   },
 })

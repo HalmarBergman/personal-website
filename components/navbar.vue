@@ -1,11 +1,11 @@
 <template>
   <div class="navbar">
     <div class="left-elements">
-      <NuxtLink to="/" class="link"><h5 class="element" :class="{ textdark: store.lightOrDark === 'dark' }">Portfolio</h5></NuxtLink>
-      <NuxtLink to="/profiel" class="link"><h5 class="element" :class="{ textdark: store.lightOrDark === 'dark' }">Profiel</h5></NuxtLink>
-      <NuxtLink to="/cv" class="link"><h5 class="element" :class="{ textdark: store.lightOrDark === 'dark' }">Curriculum Vitae</h5></NuxtLink>
+      <NuxtLink to="/" class="link"><h5 class="element" :class="{ textdark: store.lightOrDark == true }">Portfolio</h5></NuxtLink>
+      <NuxtLink to="/profiel" class="link"><h5 class="element" :class="{ textdark: store.lightOrDark == true }">Profiel</h5></NuxtLink>
+      <NuxtLink to="/cv" class="link"><h5 class="element" :class="{ textdark: store.lightOrDark == true }">Curriculum Vitae</h5></NuxtLink>
     </div>
-    <NuxtLink to="/contact" class="link"><h5 class="element" :class="{ backgrounddark: store.lightOrDark === 'dark' }">Contact</h5></NuxtLink>
+    <NuxtLink to="/contact" class="link"><h5 class="element" :class="{ backgrounddark: store.lightOrDark == true }">Contact</h5></NuxtLink>
   </div>
 </template>
 
