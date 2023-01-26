@@ -3,9 +3,11 @@
     <div class="left-elements">
       <NuxtLink to="/" class="link"><h5 class="element" :class="{ textdark: store.lightOrDark == true }">Portfolio</h5></NuxtLink>
       <NuxtLink to="/profiel" class="link"><h5 class="element" :class="{ textdark: store.lightOrDark == true }">Profiel</h5></NuxtLink>
-      <NuxtLink to="/cv" class="link"><h5 class="element" :class="{ textdark: store.lightOrDark == true }">Curriculum Vitae</h5></NuxtLink>
+      <NuxtLink to="/curriculum vitae" class="link"
+        ><h5 class="element" :class="{ textdark: store.lightOrDark == true }">Curriculum Vitae</h5></NuxtLink
+      >
     </div>
-    <NuxtLink to="/contact" class="link"><h5 class="element" :class="{ backgrounddark: store.lightOrDark == true }">Contact</h5></NuxtLink>
+    <NuxtLink to="/contact" class="link"><h5 class="element" :class="{ textdark: store.lightOrDark == true }">Contact</h5></NuxtLink>
   </div>
 </template>
 
@@ -36,12 +38,8 @@ const store = useNuxtStore()
     text-decoration: none;
   }
   .element {
-    text-decoration: none;
     &:hover {
       cursor: pointer;
-      color: $halmar-beige;
-    }
-    &.active {
       color: $halmar-beige;
     }
   }

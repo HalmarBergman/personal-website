@@ -22,12 +22,18 @@ $text-dark: #ffffff;
 .backgrounddark {
   background-color: $background-dark;
 }
-.textdark {
-  color: $text-dark;
+.sectionlight {
+  background-color: $section-light;
+}
+.sectiondark {
+  background-color: $section-dark;
 }
 .textlight {
   color: $text-light;
 }
+.textdark {
+  color: $text-dark;
+}
 .beige {
-    color: $halmar-beige;
+  color: $halmar-beige;
 }

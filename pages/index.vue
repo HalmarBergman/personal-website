@@ -2,8 +2,8 @@
   <div class="portfolio">
     <div class="background" :class="{ backgrounddark: store.lightOrDark == true }">
       <div class="section" :class="{ sectiondark: store.lightOrDark == true }">
-        <label class="toggle-wrapper">
-          <div class="toggle" @click="mode()">
+        <label class="toggle-wrapper" :class="{ dark: store.lightOrDark == true }" @click="mode()">
+          <div class="toggle">
             <input class="toggle-state" type="checkbox" name="check" value="check" @click="mode()" />
             <div class="indicator"></div>
           </div>
