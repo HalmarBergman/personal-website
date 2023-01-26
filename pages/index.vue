@@ -16,13 +16,13 @@
         <Navbar />
         <div class="content">
           <div class="firstPortfolio">
-            <img src="~/assets/images/test.jpg" />
+            <img src="~/assets/images/staand.jpg" />
           </div>
           <div class="secondPortfolio">
-            <img src="~/assets/images/test.jpg" />
+            <img src="~/assets/images/sitting.jpg" />
           </div>
           <div class="thirdPortfolio">
-            <img src="~/assets/images/test.jpg" />
+            <img src="~/assets/images/table.jpg" />
           </div>
         </div>
       </div>

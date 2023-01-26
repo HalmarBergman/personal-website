@@ -114,7 +114,7 @@ function mode() {
     align-items: center;
     padding-right: 40px;
     width: 40%;
-    height: 100%;
+    height: 400px;
     .elements {
       display: flex;
       flex-direction: row;
