@@ -41,6 +41,7 @@ const store = useNuxtStore()
     &:hover {
       cursor: pointer;
       color: $halmar-beige;
+      scale: 1.1;
     }
   }
 }
