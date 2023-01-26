@@ -49,8 +49,8 @@
                     <v-text-field label="Email Adres" :rules="formRules.emailRules"></v-text-field>
                     <v-textarea label="Beschrijving" :rules="formRules.required"></v-textarea>
                     <div class="button-wrapper">
-                      <button class="button" type="button" @click="mail()">
-                        <h5>Versturen</h5>
+                      <button class="button" :class="{ dark: store.lightOrDark == true }" type="button" @click="mail()">
+                        <h5 class="text" :class="{ textdark: store.lightOrDark == true }">Versturen</h5>
                       </button>
                     </div>
                   </v-col>
@@ -174,6 +174,18 @@ function mode() {
             box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3), -1px -1px 2px rgba(230, 230, 230, 0.5), inset -5px 5px 10px rgba(230, 230, 230, 0.2),
               inset 5px -5px 10px rgba(230, 230, 230, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.9), inset 5px 5px 13px rgba(230, 230, 230, 0.9);
             border-radius: 50px;
+          }
+          &.dark {
+            background: linear-gradient(135deg, #474747 0%, #414141 100%);
+            box-shadow: -5px 5px 10px rgba(61, 61, 61, 0.2), 5px -5px 10px rgba(61, 61, 61, 0.2), -5px -5px 10px rgba(75, 75, 75, 0.9),
+              5px 5px 13px rgba(61, 61, 61, 0.9), inset 1px 1px 2px rgba(75, 75, 75, 0.3), inset -1px -1px 2px rgba(61, 61, 61, 0.5);
+            border-radius: 50px;
+            &:hover {
+              background: #444444;
+              box-shadow: 1px 1px 2px rgba(75, 75, 75, 0.3), -1px -1px 2px rgba(61, 61, 61, 0.5), inset -5px 5px 10px rgba(61, 61, 61, 0.2),
+                inset 5px -5px 10px rgba(61, 61, 61, 0.2), inset -5px -5px 10px rgba(75, 75, 75, 0.9), inset 5px 5px 13px rgba(61, 61, 61, 0.9);
+              border-radius: 50px;
+            }
           }
         }
       }
