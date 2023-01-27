@@ -1,64 +1,46 @@
 <template>
-  <div class="contact">
-    <div class="background" :class="{ backgrounddark: store.lightOrDark == true }">
-      <div class="section" :class="{ sectiondark: store.lightOrDark == true }">
-        <label class="toggle-wrapper" :class="{ dark: store.lightOrDark == true }" @click="mode()">
-          <div class="toggle">
-            <input class="toggle-state" type="checkbox" name="check" value="check" @click="mode()" />
-            <div class="indicator"></div>
-          </div>
-        </label>
-        <div class="title">
-          <h1 class="my-name" :class="{ textdark: store.lightOrDark == true }">Halmar</h1>
-          <h1 class="my-name" :class="{ textdark: store.lightOrDark == true }">Henrik Bjarne</h1>
-          <h1 class="my-name" :class="{ textdark: store.lightOrDark == true }">Bergman</h1>
+  <div class="content">
+    <div class="first-column">
+      <div class="elements">
+        <div class="element" @click="linkedIn()">
+          <v-icon size="50" class="icon" :color="store.lightOrDark ? '#ffffff' : '#444444'" icon="mdi-linkedin" />
+          <h5 :class="{ textdark: store.lightOrDark == true }">LinkedIn</h5>
         </div>
-        <Navbar />
-        <div class="content">
-          <div class="first-column">
-            <div class="elements">
-              <div class="element" @click="linkedIn()">
-                <v-icon size="50" class="icon" icon="mdi-linkedin" />
-                <h5 :class="{ textdark: store.lightOrDark == true }">LinkedIn</h5>
-              </div>
-              <div class="element" @click="github()">
-                <v-icon size="50" class="icon" icon="mdi-github" />
-                <h5 :class="{ textdark: store.lightOrDark == true }">Github</h5>
-              </div>
-              <div class="element" @click="instagram()">
-                <v-icon size="50" class="icon" icon="mdi-instagram" />
-                <h5 :class="{ textdark: store.lightOrDark == true }">Instagram</h5>
-              </div>
-              <div class="element" @click="facebook()">
-                <v-icon size="50" class="icon" icon="mdi-facebook" />
-                <h5 :class="{ textdark: store.lightOrDark == true }">Facebook</h5>
-              </div>
-            </div>
-          </div>
-          <div class="second-column">
-            <div class="form">
-              <h3 :class="{ textdark: store.lightOrDark == true }">Stuur een berichtje!</h3>
-              <h6 :class="{ textdark: store.lightOrDark == true }">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </h6>
+        <div class="element" @click="github()">
+          <v-icon size="50" class="icon" :color="store.lightOrDark ? '#ffffff' : '#444444'" icon="mdi-github" />
+          <h5 :class="{ textdark: store.lightOrDark == true }">Github</h5>
+        </div>
+        <div class="element" @click="instagram()">
+          <v-icon size="50" class="icon" :color="store.lightOrDark ? '#ffffff' : '#444444'" icon="mdi-instagram" />
+          <h5 :class="{ textdark: store.lightOrDark == true }">Instagram</h5>
+        </div>
+        <div class="element" @click="facebook()">
+          <v-icon size="50" class="icon" :color="store.lightOrDark ? '#ffffff' : '#444444'" icon="mdi-facebook" />
+          <h5 :class="{ textdark: store.lightOrDark == true }">Facebook</h5>
+        </div>
+      </div>
+    </div>
+    <div class="second-column">
+      <div class="form">
+        <h3 :class="{ textdark: store.lightOrDark == true }">Stuur een berichtje!</h3>
+        <h6 :class="{ textdark: store.lightOrDark == true }">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </h6>
 
-              <v-form ref="form" class="form">
-                <v-row>
-                  <v-col cols="12" lg="12">
-                    <v-text-field height="20" label="Naam" :rules="formRules.required"></v-text-field>
-                    <v-text-field label="Email Adres" :rules="formRules.emailRules"></v-text-field>
-                    <v-textarea label="Beschrijving" :rules="formRules.required"></v-textarea>
-                    <div class="button-wrapper">
-                      <button class="button" :class="{ dark: store.lightOrDark == true }" type="button" @click="mail()">
-                        <h5 class="text" :class="{ textdark: store.lightOrDark == true }">Versturen</h5>
-                      </button>
-                    </div>
-                  </v-col>
-                </v-row>
-              </v-form>
-            </div>
-          </div>
-        </div>
+        <v-form ref="form" class="form">
+          <v-row>
+            <v-col cols="12" lg="12">
+              <v-text-field height="20" label="Naam" :rules="formRules.required"></v-text-field>
+              <v-text-field label="Email Adres" :rules="formRules.emailRules"></v-text-field>
+              <v-textarea label="Beschrijving" :rules="formRules.required"></v-textarea>
+              <div class="button-wrapper">
+                <button class="button" :class="{ dark: store.lightOrDark == true }" type="button" @click="mail()">
+                  <h5 class="text" :class="{ textdark: store.lightOrDark == true }">Versturen</h5>
+                </button>
+              </div>
+            </v-col>
+          </v-row>
+        </v-form>
       </div>
     </div>
   </div>
@@ -88,11 +70,6 @@ async function mail() {
   if (valid) {
     console.log('valid')
   }
-}
-
-function mode() {
-  store.lightOrDark = !store.lightOrDark
-  console.log(store.lightOrDark)
 }
 </script>
 

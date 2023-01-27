@@ -63,6 +63,10 @@
     display: none;
   }
   .indicator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     height: 100%;
     width: 200%;
     background: #ecf0f3;
@@ -70,6 +74,13 @@
     transform: translate3d(-75%, 0, 0);
     transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
     box-shadow: -8px -4px 8px 0px #fff, 8px 4px 12px 0px #d1d9e6;
+    .icon-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 25px;
+    }
   }
   .toggle-state:checked ~ .indicator {
     transform: translate3d(25%, 0, 0);
@@ -94,4 +105,14 @@
       box-shadow: -8px -4px 8px 0px rgb(66, 66, 66), 8px 4px 12px 0px rgb(48, 48, 48);
     }
   }
+}
+
+.textlight {
+  color: $text-light;
+}
+.textdark {
+  color: $text-dark;
+}
+.beige {
+  color: $halmar-beige;
 }
