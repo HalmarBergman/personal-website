@@ -1,8 +1,8 @@
 <template>
   <div class="navbar">
     <div class="left-elements">
-      <NuxtLink to="/" class="link"><h5 class="element" :class="{ textdark: store.lightOrDark == true }">Portfolio</h5></NuxtLink>
-      <NuxtLink to="/profile" class="link"><h5 class="element" :class="{ textdark: store.lightOrDark == true }">Profile</h5></NuxtLink>
+      <NuxtLink to="/" class="link"><h5 class="element" :class="{ textdark: store.lightOrDark == true }">Profile</h5></NuxtLink>
+      <NuxtLink to="/portfolio" class="link"><h5 class="element" :class="{ textdark: store.lightOrDark == true }">Portfolio</h5></NuxtLink>
       <NuxtLink to="/curriculumvitae" class="link"
         ><h5 class="element" :class="{ textdark: store.lightOrDark == true }">Curriculum Vitae</h5></NuxtLink
       >
