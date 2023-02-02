@@ -107,7 +107,7 @@
           </h6>
         </div>
       </div>
-      <div class="element last">
+      <div class="element">
         <div class="header">
           <h4>Teaching Assistent</h4>
           <h2 :class="{ greyongrey: store.lightOrDark == true }">Utrecht University | 2021 - 2022</h2>
@@ -120,7 +120,7 @@
         </div>
       </div>
       <h3 :class="{ textdark: store.lightOrDark == true }">Certificates</h3>
-      <div class="element">
+      <div class="element last">
         <div class="header">
           <h4>Azure Data Fundamentals</h4>
           <h2 :class="{ greyongrey: store.lightOrDark == true }">Microsoft | 2022</h2>
@@ -195,6 +195,11 @@ const store = useNuxtStore()
     width: 65%;
     height: 100%;
     gap: 20px;
+    .element {
+      &.last {
+        padding-bottom: 100px;
+      }
+    }
   }
   .greyongrey {
     color: #676767;
