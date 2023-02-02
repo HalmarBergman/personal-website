@@ -3,19 +3,19 @@
     <div class="first-column">
       <div class="elements">
         <div class="element" @click="linkedIn()">
-          <v-icon size="50" class="icon" :color="store.lightOrDark ? '#ffffff' : '#444444'" icon="mdi-linkedin" />
+          <v-icon size="50" class="icon" :color="store.lightOrDark ? '#1a1a1a' : '#444444'" icon="mdi-linkedin" />
           <h5 :class="{ textdark: store.lightOrDark == true }">LinkedIn</h5>
         </div>
         <div class="element" @click="github()">
-          <v-icon size="50" class="icon" :color="store.lightOrDark ? '#ffffff' : '#444444'" icon="mdi-github" />
+          <v-icon size="50" class="icon" :color="store.lightOrDark ? '#1a1a1a' : '#444444'" icon="mdi-github" />
           <h5 :class="{ textdark: store.lightOrDark == true }">Github</h5>
         </div>
         <div class="element" @click="instagram()">
-          <v-icon size="50" class="icon" :color="store.lightOrDark ? '#ffffff' : '#444444'" icon="mdi-instagram" />
+          <v-icon size="50" class="icon" :color="store.lightOrDark ? '#1a1a1a' : '#444444'" icon="mdi-instagram" />
           <h5 :class="{ textdark: store.lightOrDark == true }">Instagram</h5>
         </div>
         <div class="element" @click="facebook()">
-          <v-icon size="50" class="icon" :color="store.lightOrDark ? '#ffffff' : '#444444'" icon="mdi-facebook" />
+          <v-icon size="50" class="icon" :color="store.lightOrDark ? '#1a1a1a' : '#444444'" icon="mdi-facebook" />
           <h5 :class="{ textdark: store.lightOrDark == true }">Facebook</h5>
         </div>
       </div>
@@ -168,5 +168,17 @@ async function mail() {
       }
     }
   }
+}
+
+@media (width < 480px) {
+}
+
+@media (width > 480px) {
+}
+
+@media (width > 760px) {
+}
+
+@media (width > 1200px) {
 }
 </style>

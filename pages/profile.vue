@@ -66,4 +66,16 @@ const store = useNuxtStore()
     }
   }
 }
+
+@media (width < 480px) {
+}
+
+@media (width > 480px) {
+}
+
+@media (width > 760px) {
+}
+
+@media (width > 1200px) {
+}
 </style>

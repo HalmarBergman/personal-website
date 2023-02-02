@@ -195,15 +195,21 @@ const store = useNuxtStore()
     width: 65%;
     height: 100%;
     gap: 20px;
-    .element {
-      &.last {
-        padding-bottom: 20px;
-        border-bottom: 1px solid #e0e0e0;
-      }
-    }
   }
   .greyongrey {
     color: #676767;
   }
+}
+
+@media (width < 480px) {
+}
+
+@media (width > 480px) {
+}
+
+@media (width > 760px) {
+}
+
+@media (width > 1200px) {
 }
 </style>

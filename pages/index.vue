@@ -64,4 +64,21 @@
     }
   }
 }
+
+@media (width < 480px) {
+  .content {
+    .secondPortfolio {
+      display: none;
+    }
+  }
+}
+
+@media (width > 480px) {
+}
+
+@media (width > 760px) {
+}
+
+@media (width > 1200px) {
+}
 </style>
