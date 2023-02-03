@@ -57,6 +57,40 @@
   }
 }
 
+.arrow {
+  position: relative;
+  width: 30px;
+  height: 2px;
+  background: white;
+  border-radius: 2px;
+
+  transition: transform 0.3s ease;
+  &::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 8px;
+    height: 2px;
+    right: -3px;
+    bottom: 2px;
+    background: white;
+    border-radius: 2px;
+    transform: rotate(45deg);
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 8px;
+    height: 2px;
+    right: -3px;
+    bottom: -2px;
+    background: white;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+  }
+}
+
 @keyframes shake {
   0% {
     transform: translate(0, 0);

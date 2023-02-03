@@ -1,13 +1,25 @@
 <template>
   <div class="content">
-    <div class="firstPortfolio">
-      <img src="~/assets/images/staand.jpg" />
+    <div class="portfolio first">
+      <img src="~/assets/images/portfolio/phishing.png" />
+      <div class="text">
+        <h4>Lorem Ipsum</h4>
+        <div class="arrow"></div>
+      </div>
     </div>
-    <div class="secondPortfolio">
-      <img src="~/assets/images/sitting.jpg" />
+    <div class="portfolio second">
+      <img src="~/assets/images/portfolio/phishing.png" />
+      <div class="text">
+        <h4>BSc Thesis</h4>
+        <div class="arrow"></div>
+      </div>
     </div>
-    <div class="thirdPortfolio">
-      <img src="~/assets/images/table.jpg" />
+    <div class="portfolio third">
+      <img src="~/assets/images/portfolio/phishing.png" />
+      <div class="text">
+        <h4>Lorem Ipsum</h4>
+        <div class="arrow"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -27,40 +39,59 @@
   height: 100%;
   gap: 40px;
   overflow-y: scroll;
-  .firstPortfolio {
+  .portfolio {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    img {
-      width: 100%;
+    cursor: pointer;
+    &.first {
+      top: 0;
+      left: 0;
+      width: 50%;
       height: 100%;
-      object-fit: cover;
     }
-  }
-  .secondPortfolio {
-    position: absolute;
-    top: 0;
-    left: 65%;
-    width: 35%;
-    height: 38%;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    &.second {
+      top: 0;
+      left: 65%;
+      width: 35%;
+      height: 38%;
     }
-  }
-  .thirdPortfolio {
-    position: absolute;
-    top: 40%;
-    left: 55%;
-    width: 45%;
-    height: 60%;
+    &.third {
+      top: 40%;
+      left: 55%;
+      width: 45%;
+      height: 60%;
+    }
+
+    &:hover {
+      img {
+        filter: grayscale(0);
+      }
+      .text {
+        .arrow {
+          transform: translateX(10px);
+        }
+      }
+    }
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      filter: grayscale(1);
+    }
+    .text {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      bottom: 20px;
+      left: 25px;
+      z-index: 1;
+      gap: 20px;
+      width: 80%;
+      h4 {
+        font-size: 18px;
+        color: white;
+      }
     }
   }
 }
