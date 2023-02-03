@@ -3,6 +3,7 @@ export const useNuxtStore = defineStore('nuxt-store', {
     return {
       env: '' as '' | 'development' | 'test' | 'production',
       lightOrDark: false as boolean,
+      scrollY: 0 as number,
     }
   },
 })

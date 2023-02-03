@@ -25,36 +25,68 @@
             </label>
             <div class="title-test-column">
               <div class="title-test">
-                <h1 class="number" :class="{ letter: animation.firstflip == true }">{{ animation.first }}</h1>
-                <h1 class="number" :class="{ letter: animation.secondflip == true }">{{ animation.second }}</h1>
-                <h1 class="number" :class="{ letter: animation.thirdflip == true }">{{ animation.third }}</h1>
-                <h1 class="number" :class="{ letter: animation.fourthflip == true }">{{ animation.fourth }}</h1>
-                <h1 class="number" :class="{ letter: animation.fifthflip == true }">{{ animation.fifth }}</h1>
-                <h1 class="number" :class="{ letter: animation.sixthflip == true }">{{ animation.sixth }}</h1>
+                <h1 class="number" :class="{ letter: animation.firstflip == true, textdark: store.lightOrDark == true }">{{ animation.first }}</h1>
+                <h1 class="number" :class="{ letter: animation.secondflip == true, textdark: store.lightOrDark == true }">{{ animation.second }}</h1>
+                <h1 class="number" :class="{ letter: animation.thirdflip == true, textdark: store.lightOrDark == true }">{{ animation.third }}</h1>
+                <h1 class="number" :class="{ letter: animation.fourthflip == true, textdark: store.lightOrDark == true }">{{ animation.fourth }}</h1>
+                <h1 class="number" :class="{ letter: animation.fifthflip == true, textdark: store.lightOrDark == true }">{{ animation.fifth }}</h1>
+                <h1 class="number" :class="{ letter: animation.sixthflip == true, textdark: store.lightOrDark == true }">{{ animation.sixth }}</h1>
               </div>
               <div class="title-test">
-                <h1 class="number" :class="{ letter: animation.seventhflip == true }">{{ animation.seventh }}</h1>
-                <h1 class="number" :class="{ letter: animation.eighthflip == true }">{{ animation.eighth }}</h1>
-                <h1 class="number" :class="{ letter: animation.ninthflip == true }">{{ animation.ninth }}</h1>
-                <h1 class="number" :class="{ letter: animation.tenthflip == true }">{{ animation.tenth }}</h1>
-                <h1 class="number" :class="{ letter: animation.eleventhflip == true }">{{ animation.eleventh }}</h1>
-                <h1 class="number" :class="{ letter: animation.twelfthflip == true }">{{ animation.twelfth }}</h1>
+                <h1 class="number" :class="{ letter: animation.seventhflip == true, textdark: store.lightOrDark == true }">
+                  {{ animation.seventh }}
+                </h1>
+                <h1 class="number" :class="{ letter: animation.eighthflip == true, textdark: store.lightOrDark == true }">{{ animation.eighth }}</h1>
+                <h1 class="number" :class="{ letter: animation.ninthflip == true, textdark: store.lightOrDark == true }">{{ animation.ninth }}</h1>
+                <h1 class="number" :class="{ letter: animation.tenthflip == true, textdark: store.lightOrDark == true }">{{ animation.tenth }}</h1>
+                <h1 class="number" :class="{ letter: animation.eleventhflip == true, textdark: store.lightOrDark == true }">
+                  {{ animation.eleventh }}
+                </h1>
+                <h1 class="number" :class="{ letter: animation.twelfthflip == true, textdark: store.lightOrDark == true }">
+                  {{ animation.twelfth }}
+                </h1>
 
-                <h1 class="number" :class="{ letter: animation.thirteenthflip == true }">{{ animation.thirteenth }}</h1>
-                <h1 class="number" :class="{ letter: animation.fourteenthflip == true }">{{ animation.fourteenth }}</h1>
-                <h1 class="number" :class="{ letter: animation.fifteenthflip == true }">{{ animation.fifteenth }}</h1>
-                <h1 class="number" :class="{ letter: animation.sixteenthflip == true }">{{ animation.sixteenth }}</h1>
-                <h1 class="number" :class="{ letter: animation.seventeenthflip == true }">{{ animation.seventeenth }}</h1>
-                <h1 class="number" :class="{ letter: animation.eighteenthflip == true }">{{ animation.eighteenth }}</h1>
+                <h1 class="number" :class="{ letter: animation.thirteenthflip == true, textdark: store.lightOrDark == true }">
+                  {{ animation.thirteenth }}
+                </h1>
+                <h1 class="number" :class="{ letter: animation.fourteenthflip == true, textdark: store.lightOrDark == true }">
+                  {{ animation.fourteenth }}
+                </h1>
+                <h1 class="number" :class="{ letter: animation.fifteenthflip == true, textdark: store.lightOrDark == true }">
+                  {{ animation.fifteenth }}
+                </h1>
+                <h1 class="number" :class="{ letter: animation.sixteenthflip == true, textdark: store.lightOrDark == true }">
+                  {{ animation.sixteenth }}
+                </h1>
+                <h1 class="number" :class="{ letter: animation.seventeenthflip == true, textdark: store.lightOrDark == true }">
+                  {{ animation.seventeenth }}
+                </h1>
+                <h1 class="number" :class="{ letter: animation.eighteenthflip == true, textdark: store.lightOrDark == true }">
+                  {{ animation.eighteenth }}
+                </h1>
               </div>
               <div class="title-test">
-                <h1 class="number" :class="{ letter: animation.nineteenthflip == true }">{{ animation.nineteenth }}</h1>
-                <h1 class="number" :class="{ letter: animation.twentiethflip == true }">{{ animation.twentieth }}</h1>
-                <h1 class="number" :class="{ letter: animation.twentyfirstflip == true }">{{ animation.twentyfirst }}</h1>
-                <h1 class="number" :class="{ letter: animation.twentysecondflip == true }">{{ animation.twentysecond }}</h1>
-                <h1 class="number" :class="{ letter: animation.twentythirdflip == true }">{{ animation.twentythird }}</h1>
-                <h1 class="number" :class="{ letter: animation.twentyfourthflip == true }">{{ animation.twentyfourth }}</h1>
-                <h1 class="number" :class="{ letter: animation.twentyfifthflip == true }">{{ animation.twentyfifth }}</h1>
+                <h1 class="number" :class="{ letter: animation.nineteenthflip == true, textdark: store.lightOrDark == true }">
+                  {{ animation.nineteenth }}
+                </h1>
+                <h1 class="number" :class="{ letter: animation.twentiethflip == true, textdark: store.lightOrDark == true }">
+                  {{ animation.twentieth }}
+                </h1>
+                <h1 class="number" :class="{ letter: animation.twentyfirstflip == true, textdark: store.lightOrDark == true }">
+                  {{ animation.twentyfirst }}
+                </h1>
+                <h1 class="number" :class="{ letter: animation.twentysecondflip == true, textdark: store.lightOrDark == true }">
+                  {{ animation.twentysecond }}
+                </h1>
+                <h1 class="number" :class="{ letter: animation.twentythirdflip == true, textdark: store.lightOrDark == true }">
+                  {{ animation.twentythird }}
+                </h1>
+                <h1 class="number" :class="{ letter: animation.twentyfourthflip == true, textdark: store.lightOrDark == true }">
+                  {{ animation.twentyfourth }}
+                </h1>
+                <h1 class="number" :class="{ letter: animation.twentyfifthflip == true, textdark: store.lightOrDark == true }">
+                  {{ animation.twentyfifth }}
+                </h1>
               </div>
             </div>
             <Navbar />
@@ -75,13 +107,13 @@ function lightOrDark() {
 }
 
 function randomTime1() {
-  return 2 + Math.random() * (3 - 2)
+  return 1 + Math.random() * (2 - 1)
 }
 function randomTime2() {
-  return 3.5 + Math.random() * (4.5 - 3.5)
+  return 2.5 + Math.random() * (3.5 - 2.5)
 }
 function randomTime3() {
-  return 5 + Math.random() * (6 - 5)
+  return 3.5 + Math.random() * (4.5 - 3.5)
 }
 
 setInterval(A, randomTime1() * 1000)

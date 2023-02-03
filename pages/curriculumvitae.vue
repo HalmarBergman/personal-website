@@ -8,13 +8,13 @@
         </div>
       </div>
       <div class="skills">
-        <v-icon size="35" class="icon" :color="store.lightOrDark ? '#ffffff' : '#444444'" icon="mdi-vuejs" />
-        <v-icon size="35" class="icon" :color="store.lightOrDark ? '#ffffff' : '#444444'" icon="mdi-vuetify" />
-        <v-icon size="35" class="icon" :color="store.lightOrDark ? '#ffffff' : '#444444'" icon="mdi-language-html5" />
-        <v-icon size="35" class="icon" :color="store.lightOrDark ? '#ffffff' : '#444444'" icon="mdi-language-css3" />
-        <v-icon size="35" class="icon" :color="store.lightOrDark ? '#ffffff' : '#444444'" icon="mdi-language-javascript" />
-        <v-icon size="35" class="icon" :color="store.lightOrDark ? '#ffffff' : '#444444'" icon="mdi-language-typescript" />
-        <v-icon size="35" class="icon" :color="store.lightOrDark ? '#ffffff' : '#444444'" icon="mdi-language-python" />
+        <v-icon size="35" class="icon" :color="store.lightOrDark ? '#111111' : '#444444'" icon="mdi-vuejs" />
+        <v-icon size="35" class="icon" :color="store.lightOrDark ? '#111111' : '#444444'" icon="mdi-vuetify" />
+        <v-icon size="35" class="icon" :color="store.lightOrDark ? '#111111' : '#444444'" icon="mdi-language-html5" />
+        <v-icon size="35" class="icon" :color="store.lightOrDark ? '#111111' : '#444444'" icon="mdi-language-css3" />
+        <v-icon size="35" class="icon" :color="store.lightOrDark ? '#111111' : '#444444'" icon="mdi-language-javascript" />
+        <v-icon size="35" class="icon" :color="store.lightOrDark ? '#111111' : '#444444'" icon="mdi-language-typescript" />
+        <v-icon size="35" class="icon" :color="store.lightOrDark ? '#111111' : '#444444'" icon="mdi-language-python" />
       </div>
       <h3 :class="{ textdark: store.lightOrDark == true }">Education</h3>
       <div class="element">
@@ -153,6 +153,8 @@ const store = useNuxtStore()
   height: 100%;
   gap: 40px;
   overflow-y: scroll;
+
+  animation: 1s ease-out 0s 1 slideInBottom;
   .first-column {
     display: flex;
     flex-direction: column;
@@ -182,11 +184,6 @@ const store = useNuxtStore()
       align-items: center;
       width: 100%;
       height: 100%;
-      .icon {
-        &.dark {
-          color: $text-dark;
-        }
-      }
     }
   }
   .second-column {

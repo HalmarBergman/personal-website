@@ -39,6 +39,8 @@
   height: 100%;
   gap: 40px;
   overflow-y: scroll;
+
+  animation: 1s ease-out 0s 1 slideInBottom;
   .portfolio {
     position: absolute;
     cursor: pointer;

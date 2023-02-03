@@ -84,6 +84,8 @@ async function mail() {
   width: 100%;
   height: 100%;
   overflow-y: scroll;
+
+  animation: 1s ease-out 0s 1 slideInBottom;
   .first-column {
     display: flex;
     flex-direction: column;

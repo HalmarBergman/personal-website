@@ -38,16 +38,19 @@ const store = useNuxtStore()
   height: 100%;
   gap: 40px;
   overflow-y: scroll;
+
+  animation: 1s ease-out 0s 1 slideInBottom;
   .first-section {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     padding: 0px;
     gap: 25px;
     width: 60%;
     .image {
       position: relative;
-      width: 100%;
+      width: 98%;
       height: 100%;
       .background {
         position: absolute;
