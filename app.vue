@@ -114,7 +114,7 @@ setInterval(X, randomTime3() * 1000)
 setInterval(Y, randomTime3() * 1000)
 
 function A() {
-  animation.firstflip = !animation.firstflip
+  animation.firstflip = !animation.secondflip
   animation.first = 'H'
 }
 function B() {
