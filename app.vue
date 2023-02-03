@@ -251,13 +251,13 @@ function Y() {
 
 //* Page Meta
 useHead({
-  title: 'Nuxt app',
-  meta: [{ name: 'Nuxt app', content: 'Nuxt app' }],
+  title: 'Halmar Bergman',
+  meta: [{ name: 'Halmar Bergman', content: 'Halmar Bergman' }],
   link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   bodyAttrs: {
     class: 'body',
   },
-  script: [{ children: "console.log('Nuxt app')" }],
+  script: [{ children: "console.log('Halmar Bergman')" }],
 })
 
 //* Stores
